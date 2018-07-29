@@ -1,0 +1,13 @@
+Name,Description,Sprite,Range Indicator Sprite,Particle Effect,Particle Effect Type,Projectile Effect?,Mana Cost,Effect,Effect Target,Ability Power,Base Power,Ability Range Type,Ability Range
+Double Shot,Shoots two tiles in front,ability_doubleshot,range_line2,particle_doubleshot,multiple,TRUE,40,Damage,Foes,Special,40,Line,2
+Flask Drink,Heals HP,ability_flaskdrink,range_self,particle_flaskdrink,single,FALSE,50,Heal,Self,Special,20,Self,1
+Shockwave,Does less damage the farther away it hits,ability_shockwave,range_all,particle_shockwave,multiple,TRUE,100,DecreasingDamage,Default,Physical,100,Constant,5
+Sideways Slash,Strikes three enemies in front,ability_sidewaysslash,range_tripleline1,particle_sidewaysslash,single,FALSE,30,Damage,Foes,Physical,50,TripleLine,1
+Tentacle Spikes,Hits entire row in front,ability_tentaclespikes,range_line,particle_tentaclespikes,multiple,TRUE,40,Damage,Foes,Physical,50,Line,5
+Inflict Poison,Poisons enemy in front,ability_inflictpoison,range_line1,particle_inflictpoison,multiple,TRUE,35,InflictStatusPoison,Foes,Special,10,Line,1
+Basic Attack,Basic monster attack,ability_default,range_line2,particle_basicattack,multiple,TRUE,10,Damage,Default,Physical,20,Line,2
+Basic Heal,Basic monster heal,ability_default,range_line1buff,particle_flaskdrink,multiple,TRUE,50,Heal,Ally,Special,20,Line,1
+Haste,Speeds player up times 2,ability_haste,range_self,particle_haste,single,FALSE,100,InflictStatusHaste,Self,Physical,5,Self,1
+Bind,Slows down enemy to half their speed,ability_bind,range_line1,particle_bind,multiple,TRUE,100,InflictStatusSlow,Foes,Special,5,Line,2
+Focus,Doubles STR,ability_focus,range_self,particle_focus,single,FALSE,100,InflictStatusFocus,Self,Physical,5,Self,1
+Paralyze,Immobilizes an enemy,ability_paralyze,range_line1,particle_paralyze,hybird,TRUE,100,InflictStatusStop,Foes,Special,5,Line,2

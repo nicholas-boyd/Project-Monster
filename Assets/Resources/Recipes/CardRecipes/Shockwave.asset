@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8134f15a97411c949ae3e74b027dd28b, type: 3}
+  m_Name: Shockwave
+  m_EditorClassIdentifier: 
+  Name: Shockwave
+  Description: Does less damage the farther away it hits
+  Sprite: {fileID: 21300000, guid: 5aaf96c15ec3e5947860285aebf32e7a, type: 3}
+  AbilityRangeIndicator: {fileID: 21300000, guid: fc36294bcb4b0074f8e04d751292afeb,
+    type: 3}
+  ParticleEffect: {fileID: 198728083853474614, guid: 568a3fc78e4413544b95192bd37709a9,
+    type: 2}
+  ParticalEffectType: 1
+  ProjectileEffect: 1
+  RedHitMarker: {fileID: 198155783208463690, guid: b50ffe4c9f8f73340aca193deab28b73,
+    type: 2}
+  BlueHitMarker: {fileID: 198446313144945846, guid: 689d339e2cdaeac4c873e0f3e6a425ee,
+    type: 2}
+  AbilityManaCost: 100
+  AbilityEffectTarget: DefaultAbilityEffectTarget
+  AbilityEffect: DecreasingDamageAbilityEffect
+  AbilityPower: PhysicalAbilityPower
+  BasePower: 100
+  AbilityRange: ConstantAbilityRange
+  AbilityRangeHorizontal: 5
