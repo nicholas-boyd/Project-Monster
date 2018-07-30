@@ -26,17 +26,27 @@ public class GameMenuController : MonoBehaviour {
     void OnEnable()
     {
         this.AddObserver(InventoryToggle, InputController.AlphaDownNotification);
+        this.AddObserver(CheckLayout, InputController.ScreenSizeUpdateNotification);
     }
 
     void OnDisable()
     {
         this.RemoveObserver(InventoryToggle, InputController.AlphaDownNotification);
+        this.RemoveObserver(CheckLayout, InputController.ScreenSizeUpdateNotification);
     }
 
     void InventoryToggle(object sender, object args)
     {
         if (args.Equals(KeyCode.I))
             OnInventoryButton();
+    }
+
+    void CheckLayout(object sender, object args)
+    {
+        if (hidden)
+            menuPanel.panel.SetPosition(HideKey, false);
+        else
+            menuPanel.panel.SetPosition(ShowKey, false);
     }
 
     public void Show()

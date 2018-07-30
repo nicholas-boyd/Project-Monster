@@ -128,10 +128,20 @@ public class InventoryPanelController : MonoBehaviour
         panel.panel.RemovePosition(HideKey);
         panel.panel.AddPosition(ShowKey, TextAnchor.MiddleCenter, TextAnchor.MiddleCenter, Vector2.zero);
         panel.panel.AddPosition(HideKey, TextAnchor.UpperCenter, TextAnchor.LowerCenter, Vector2.zero);
+
+        panel.panel.SetPosition(ShowKey, false);
+
+        itemPositions = new Vector3[panel.items.Count];
+
+        for (int i = 0; i < panel.items.Count; i++)
+        {
+            itemPositions[i] = panel.items[i].transform.position;
+        }
+
         if (Show)
-            ShowPanel();
+            panel.panel.SetPosition(ShowKey, false);
         else
-            HidePanel();
+            panel.panel.SetPosition(HideKey, false);
     }
     #endregion
 }

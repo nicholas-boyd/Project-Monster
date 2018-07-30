@@ -18,6 +18,27 @@ public class MainMenuController : MonoBehaviour
         hidden = false;
         menuPanel.panel.SetPosition(ShowKey, false);
     }
+    void OnEnable()
+    {
+        this.AddObserver(ResizeScreen, InputController.ScreenSizeUpdateNotification);
+    }
+    void OnDisable()
+    {
+        this.RemoveObserver(ResizeScreen, InputController.ScreenSizeUpdateNotification);
+    }
+
+    void ResizeScreen(object sender, object args)
+    {
+        if (hidden)
+        {
+            menuPanel.panel.SetPosition(HideKey, false);
+        }
+        else
+        {
+            menuPanel.panel.SetPosition(ShowKey, false);
+        }
+    }
+
     public void OnPlayButton()
     {
         hidden = true;

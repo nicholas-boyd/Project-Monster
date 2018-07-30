@@ -2,7 +2,7 @@ Name,Description,Sprite,Range Indicator Sprite,Particle Effect,Particle Effect T
 Double Shot,Shoots two tiles in front,ability_doubleshot,range_line2,particle_doubleshot,multiple,TRUE,40,Damage,Foes,Special,40,Line,2
 Flask Drink,Heals HP,ability_flaskdrink,range_self,particle_flaskdrink,single,FALSE,50,Heal,Self,Special,20,Self,1
 Shockwave,Does less damage the farther away it hits,ability_shockwave,range_all,particle_shockwave,multiple,TRUE,100,DecreasingDamage,Default,Physical,100,Constant,5
-Sideways Slash,Strikes three enemies in front,ability_sidewaysslash,range_tripleline1,particle_sidewaysslash,single,FALSE,30,Damage,Foes,Physical,50,TripleLine,1
+Sideways Slash,Strikes three enemies in front,ability_sidewaysslash,range_tripleline1,particle_sidewaysslash,multiple,FALSE,30,Damage,Foes,Physical,50,TripleLine,1
 Tentacle Spikes,Hits entire row in front,ability_tentaclespikes,range_line,particle_tentaclespikes,multiple,TRUE,40,Damage,Foes,Physical,50,Line,5
 Inflict Poison,Poisons enemy in front,ability_inflictpoison,range_line1,particle_inflictpoison,multiple,TRUE,35,InflictStatusPoison,Foes,Special,10,Line,1
 Basic Attack,Basic monster attack,ability_default,range_line2,particle_basicattack,multiple,TRUE,10,Damage,Default,Physical,20,Line,2

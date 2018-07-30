@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4756167629276810}
   - component: {fileID: 114635662619821768}
   - component: {fileID: 114544395729316928}
-  - component: {fileID: 114482113390873078}
-  - component: {fileID: 114362980990307450}
-  - component: {fileID: 114510078316613866}
-  - component: {fileID: 114697247574649998}
+  - component: {fileID: 114238855813002000}
+  - component: {fileID: 114215725755426894}
+  - component: {fileID: 114514043313253844}
+  - component: {fileID: 114987936686171842}
   m_Layer: 0
   m_Name: Sideways Slash
   m_TagString: Untagged
@@ -45,7 +45,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114362980990307450
+--- !u!114 &114215725755426894
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec605eabb402c4840b594a2592d34e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114482113390873078
+--- !u!114 &114238855813002000
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114510078316613866
+--- !u!114 &114514043313253844
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 28950
---- !u!114 &114697247574649998
+--- !u!114 &114987936686171842
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

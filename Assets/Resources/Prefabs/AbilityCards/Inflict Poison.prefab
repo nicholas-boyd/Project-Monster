@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4269104917041248}
   - component: {fileID: 114013812054414176}
   - component: {fileID: 114299094046292160}
-  - component: {fileID: 114356835920547858}
-  - component: {fileID: 114070187270680590}
-  - component: {fileID: 114930063331812240}
-  - component: {fileID: 114227616561199918}
+  - component: {fileID: 114590090820852632}
+  - component: {fileID: 114777055415695542}
+  - component: {fileID: 114558270752337916}
+  - component: {fileID: 114263220502395928}
   m_Layer: 0
   m_Name: Inflict Poison
   m_TagString: Untagged
@@ -57,19 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 28902
---- !u!114 &114070187270680590
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1561022069206990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e769f8e1d3dcb1241a281641b0f515ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statusName: PoisonStatusEffect
---- !u!114 &114227616561199918
+--- !u!114 &114263220502395928
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -93,18 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 35
---- !u!114 &114356835920547858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1561022069206990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114930063331812240
+--- !u!114 &114558270752337916
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,3 +92,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068b07d4f6e1ce74eb7984dc25e66149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114590090820852632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561022069206990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114777055415695542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561022069206990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e769f8e1d3dcb1241a281641b0f515ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusName: PoisonStatusEffect

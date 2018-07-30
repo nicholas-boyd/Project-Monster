@@ -80,7 +80,7 @@ public class AbilityCardPanel : MonoBehaviour, IPointerEnterHandler, IPointerExi
         cardImage.SetNativeSize();
 
         rangeIndicator.sprite = data.AbilityRangeIndicator;
-        rangeIndicator.SetNativeSize();
+        //rangeIndicator.SetNativeSize();
 
         Name.text = card.GetName();
         ManaCost.text = card.GetComponent<AbilityManaCost>().amount.ToString();

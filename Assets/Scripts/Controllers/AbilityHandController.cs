@@ -20,7 +20,6 @@ public class AbilityHandController : MonoBehaviour
     const string DiscardKey = "Grave";
 
     [SerializeField] BattleController owner;
-    [SerializeField] GameObject screenCanvas;
     [SerializeField] GameObject handCanvas;
     [SerializeField] List<AbilityCardPanel> cardPanels;
     [SerializeField] AbilityDeckPanel DiscardPanel;
@@ -38,6 +37,7 @@ public class AbilityHandController : MonoBehaviour
 
     public int selection { get; private set; }
     float drawCooldown;
+    bool hidden = true;
     bool redrawing = false;
     bool reshuffling = false;
     int MaxScrollDuration = 10;
@@ -121,7 +121,12 @@ public class AbilityHandController : MonoBehaviour
 
     void CheckLayout(object sender, object args)
     {
-        MatchScreen();
+        handPanel.SetPosition(HideKey, true);
+        if (!hidden)
+        {
+            MatchScreen();
+            ActivatePanel();
+        }
     }
 
 
@@ -233,6 +238,7 @@ public class AbilityHandController : MonoBehaviour
         // Set up empty lists
         transitions = new Tweener[8];
         handPanel.SetPosition(HideKey, false);
+        hidden = true;
     }
 
     // Connects player variables, draws first hand, shows hand panel
@@ -240,6 +246,7 @@ public class AbilityHandController : MonoBehaviour
     {
         // Show hand panel to set up card panel positions
         handPanel.SetPosition(ShowKey, false);
+        hidden = false;
         MatchScreen();
 
         // Lock panels beyond handsize, and properly display deck and graveyard panels
@@ -284,6 +291,7 @@ public class AbilityHandController : MonoBehaviour
         SetDrawCooldown();
 
         handPanel.SetPosition(ShowKey, true);
+        hidden = false;
     }
 
 
@@ -320,7 +328,8 @@ public class AbilityHandController : MonoBehaviour
     void MatchScreen()
     {
         int cardWidth = Mathf.RoundToInt(DeckPanel.panel.GetComponentInChildren<RectTransform>().rect.width);
-        int offset = Mathf.RoundToInt((screenCanvas.GetComponent<RectTransform>().rect.width - cardWidth * 8) / 9);
+        int offset = Mathf.RoundToInt((handCanvas.GetComponent<RectTransform>().rect.width - cardWidth * 8) / 9);
+        offset = offset < 0 ? 0 : offset;
         int curOffset = offset;
         int graveOffset = offset + ((offset + cardWidth) * 7);
 
