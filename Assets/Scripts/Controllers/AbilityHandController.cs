@@ -261,7 +261,8 @@ public class AbilityHandController : MonoBehaviour
         SetDrawCooldown();
 
         // Set up (connect) deck, and hand variables with player
-        owner.playerUnit.hand = new List<Card>(MaxHandSize);
+        if (owner.playerUnit.hand == null)
+            owner.playerUnit.hand = new List<Card>(MaxHandSize);
         hand = owner.playerUnit.hand;
         discards = owner.playerUnit.discards;
         deck = owner.playerUnit.deck;
@@ -269,7 +270,7 @@ public class AbilityHandController : MonoBehaviour
         curHandSize = handSize;
 
         // Draw hand
-        for (int i = 0; i < MaxHandSize; ++i)
+        for (int i = hand.Count-1; i < MaxHandSize; ++i)
         {
             if (i >= curHandSize)
             {
