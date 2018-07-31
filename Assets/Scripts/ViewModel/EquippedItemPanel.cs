@@ -3,11 +3,11 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class ItemPanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class EquippedItemPanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public const string ItemPanelDragNotification = "ITEM_PANEL_DRAG";
+    public EquipSlots equipSlots;
     public Panel panel;
-    public Canvas canvas;
     public Image icon;
     public Text nameLabel;
     public Equippable obj;
@@ -19,9 +19,8 @@ public class ItemPanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     private Vector3 startPosition;
     private RectTransform dragPlane;
 
-    void Start ()
+    void Start()
     {
-        canvas = GetComponentInChildren<Canvas>();
         Display(null);
     }
 
@@ -96,7 +95,7 @@ public class ItemPanel : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     {
         this.PostNotification(ItemPanelDragNotification, this.gameObject);
         transform.localPosition = startPosition;
-        transform.SetParent(parent);
+        transform.parent = parent;
     }
 
     static public T FindInParents<T>(GameObject go) where T : Component

@@ -36,7 +36,7 @@ public class GameMenuState : GameState {
             GameObject instance = ItemFactory.Create(items[i]);
             instance.transform.SetParent(owner.transform.Find("Trackable Items"));
             Equippable eq = instance.GetComponent<Equippable>();
-            owner.gameMenuController.inventoryPanelController.ShowInPanel(eq, i);
+            owner.gameMenuController.inventoryPanelController.ShowInPanel(eq, i, false);
         }
     }
 }

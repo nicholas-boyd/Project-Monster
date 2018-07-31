@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4269104917041248}
   - component: {fileID: 114013812054414176}
   - component: {fileID: 114299094046292160}
-  - component: {fileID: 114590090820852632}
-  - component: {fileID: 114777055415695542}
-  - component: {fileID: 114558270752337916}
-  - component: {fileID: 114263220502395928}
+  - component: {fileID: 114966077620063970}
+  - component: {fileID: 114556397909148424}
+  - component: {fileID: 114342762832825830}
+  - component: {fileID: 114364201668339718}
   m_Layer: 0
   m_Name: Inflict Poison
   m_TagString: Untagged
@@ -57,18 +57,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 28902
---- !u!114 &114263220502395928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1561022069206990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a2d4c933d9a2b143846799c08e5b4dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 1
 --- !u!114 &114299094046292160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 35
---- !u!114 &114558270752337916
+--- !u!114 &114342762832825830
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -92,7 +80,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068b07d4f6e1ce74eb7984dc25e66149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114590090820852632
+--- !u!114 &114364201668339718
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,10 +88,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1561022069206990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2d4c933d9a2b143846799c08e5b4dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114777055415695542
+  horizontal: 1
+--- !u!114 &114556397909148424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -115,3 +104,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusName: PoisonStatusEffect
+--- !u!114 &114966077620063970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561022069206990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

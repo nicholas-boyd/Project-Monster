@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4852296945008492}
   - component: {fileID: 114617435138211796}
   - component: {fileID: 114770721382992090}
-  - component: {fileID: 114508555803353056}
-  - component: {fileID: 114053214605509604}
-  - component: {fileID: 114878372701522850}
-  - component: {fileID: 114254118107449050}
+  - component: {fileID: 114489463018642334}
+  - component: {fileID: 114828005211822966}
+  - component: {fileID: 114794379903718940}
+  - component: {fileID: 114707939310906928}
   m_Layer: 0
   m_Name: Flask Drink
   m_TagString: Untagged
@@ -45,30 +45,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114053214605509604
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1445336867046196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5468c61f50be58d4abb94abef3ba112d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114254118107449050
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1445336867046196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48dd2e086176f3c42a1fadf86d3b1d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 1
---- !u!114 &114508555803353056
+--- !u!114 &114489463018642334
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -91,6 +68,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 28854
+--- !u!114 &114707939310906928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445336867046196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48dd2e086176f3c42a1fadf86d3b1d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontal: 1
 --- !u!114 &114770721382992090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -103,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 50
---- !u!114 &114878372701522850
+--- !u!114 &114794379903718940
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -112,5 +101,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 068b07d4f6e1ce74eb7984dc25e66149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114828005211822966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445336867046196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5468c61f50be58d4abb94abef3ba112d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

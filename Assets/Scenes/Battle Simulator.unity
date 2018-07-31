@@ -2531,9 +2531,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 265361846}
-  - component: {fileID: 265361849}
   - component: {fileID: 265361848}
   - component: {fileID: 265361847}
+  - component: {fileID: 265361849}
   m_Layer: 0
   m_Name: Equipped Item Panel 1
   m_TagString: Untagged
@@ -2591,11 +2591,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 265361845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a14a1cf83f49de45bc982f21f9be466, type: 3}
+  m_Script: {fileID: 11500000, guid: c23ef63d03bdbb74b91ce2ab5cb72dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipSlots: 2
   panel: {fileID: 265361847}
-  canvas: {fileID: 0}
   icon: {fileID: 641934247}
   nameLabel: {fileID: 1818777137}
   obj: {fileID: 0}
@@ -5311,6 +5311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPositions: []
+  equipPositions: []
   panel: {fileID: 2121304422}
   Show: 0
 --- !u!1 &627315525
@@ -7547,9 +7548,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 829392730}
-  - component: {fileID: 829392733}
   - component: {fileID: 829392732}
   - component: {fileID: 829392731}
+  - component: {fileID: 829392733}
   m_Layer: 0
   m_Name: Equipped Item Panel 4
   m_TagString: Untagged
@@ -7607,11 +7608,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 829392729}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a14a1cf83f49de45bc982f21f9be466, type: 3}
+  m_Script: {fileID: 11500000, guid: c23ef63d03bdbb74b91ce2ab5cb72dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipSlots: 8
   panel: {fileID: 829392731}
-  canvas: {fileID: 0}
   icon: {fileID: 616868935}
   nameLabel: {fileID: 101672083}
   obj: {fileID: 0}
@@ -8199,9 +8200,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 854791627}
-  - component: {fileID: 854791630}
   - component: {fileID: 854791629}
   - component: {fileID: 854791628}
+  - component: {fileID: 854791630}
   m_Layer: 0
   m_Name: Equipped Item Panel 3
   m_TagString: Untagged
@@ -8259,11 +8260,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 854791626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a14a1cf83f49de45bc982f21f9be466, type: 3}
+  m_Script: {fileID: 11500000, guid: c23ef63d03bdbb74b91ce2ab5cb72dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipSlots: 1
   panel: {fileID: 854791628}
-  canvas: {fileID: 0}
   icon: {fileID: 217672935}
   nameLabel: {fileID: 810066872}
   obj: {fileID: 0}
@@ -23264,9 +23265,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1901231384}
-  - component: {fileID: 1901231387}
   - component: {fileID: 1901231386}
   - component: {fileID: 1901231385}
+  - component: {fileID: 1901231387}
   m_Layer: 0
   m_Name: Equipped Item Panel 2
   m_TagString: Untagged
@@ -23324,11 +23325,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901231383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a14a1cf83f49de45bc982f21f9be466, type: 3}
+  m_Script: {fileID: 11500000, guid: c23ef63d03bdbb74b91ce2ab5cb72dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipSlots: 4
   panel: {fileID: 1901231385}
-  canvas: {fileID: 0}
   icon: {fileID: 636951043}
   nameLabel: {fileID: 1965742392}
   obj: {fileID: 0}
@@ -25261,9 +25262,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2090646065}
-  - component: {fileID: 2090646068}
   - component: {fileID: 2090646067}
   - component: {fileID: 2090646066}
+  - component: {fileID: 2090646068}
   m_Layer: 0
   m_Name: Equipped Item Panel 5
   m_TagString: Untagged
@@ -25321,11 +25322,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2090646064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a14a1cf83f49de45bc982f21f9be466, type: 3}
+  m_Script: {fileID: 11500000, guid: c23ef63d03bdbb74b91ce2ab5cb72dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipSlots: 16
   panel: {fileID: 2090646066}
-  canvas: {fileID: 0}
   icon: {fileID: 300773533}
   nameLabel: {fileID: 1045353546}
   obj: {fileID: 0}
@@ -25655,12 +25656,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 2121304420}
-  items:
+  equips:
   - {fileID: 265361849}
   - {fileID: 1901231387}
   - {fileID: 854791630}
   - {fileID: 829392733}
   - {fileID: 2090646068}
+  items:
   - {fileID: 1053892470}
   - {fileID: 1556010692}
   - {fileID: 906415993}

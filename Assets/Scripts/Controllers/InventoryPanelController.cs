@@ -11,6 +11,7 @@ public class InventoryPanelController : MonoBehaviour
     #endregion
     #region Fields
     public Vector3[] itemPositions;
+    public Vector3[] equipPositions;
     [SerializeField] InventoryPanel panel;
     public bool Show = false;
 
@@ -22,11 +23,17 @@ public class InventoryPanelController : MonoBehaviour
         panel.panel.SetPosition(ShowKey, false);
         
         itemPositions = new Vector3[panel.items.Count];
+        equipPositions = new Vector3[panel.equips.Count];
 
 
         for (int i = 0; i < panel.items.Count; i++)
         {
             itemPositions[i] = panel.items[i].transform.position;
+        }
+
+        for (int i = 0; i < panel.equips.Count; i++)
+        {
+            equipPositions[i] = panel.equips[i].transform.position;
         }
 
         panel.panel.SetPosition(HideKey, false);
@@ -35,19 +42,24 @@ public class InventoryPanelController : MonoBehaviour
     void OnEnable()
     {
         this.AddObserver(ItemPanelUpdate, ItemPanel.ItemPanelDragNotification);
+        this.AddObserver(ItemPanelUpdate, EquippedItemPanel.ItemPanelDragNotification);
         this.AddObserver(CheckLayout, InputController.ScreenSizeUpdateNotification);
     }
 
     void OnDisable()
     {
         this.RemoveObserver(ItemPanelUpdate, ItemPanel.ItemPanelDragNotification);
+        this.RemoveObserver(ItemPanelUpdate, EquippedItemPanel.ItemPanelDragNotification);
         this.RemoveObserver(CheckLayout, InputController.ScreenSizeUpdateNotification);
     }
     #endregion
     #region Public
-    public void ShowInPanel(Equippable obj, int index)
+    public void ShowInPanel(Equippable obj, int index, bool equip)
     {
-        panel.Display(obj, index);
+        if (equip)
+            panel.DisplayEquip(obj, index);
+        else
+            panel.DisplayItem(obj, index);
     }
     public void ShowPanel()
     {
@@ -76,13 +88,37 @@ public class InventoryPanelController : MonoBehaviour
             ShowPanel();
         }
     }
-    public void SwapItemPanels(ItemPanel from, ItemPanel to)
+    public void SwapItemPanels(GameObject from, GameObject to)
     {
-        Equippable[] items = new Equippable[2];
-        items[0] = from.obj;
-        items[1] = to.obj;
-        from.Display(items[1]);
-        to.Display(items[0]);
+        ItemPanel panel = from.GetComponent<ItemPanel>();
+        ItemPanel otherPanel = to.GetComponent<ItemPanel>();
+        if (panel && otherPanel)
+        {
+            Equippable[] items = new Equippable[2];
+            items[0] = panel.obj;
+            items[1] = otherPanel.obj;
+            panel.Display(items[1]);
+            otherPanel.Display(items[0]);
+            Debug.Log("Display swap");
+            return;
+        }
+
+        EquippedItemPanel equipPanel = from.GetComponent<EquippedItemPanel>();
+        if (!equipPanel)
+        {
+            equipPanel = to.GetComponent<EquippedItemPanel>();
+            otherPanel = from.GetComponent<ItemPanel>();
+        }
+        if (equipPanel.equipSlots == otherPanel.obj.defaultSlots || equipPanel.equipSlots == otherPanel.obj.secondarySlots)
+        {
+            Equippable[] items = new Equippable[2];
+            items[0] = equipPanel.obj;
+            items[1] = otherPanel.obj;
+            equipPanel.Display(items[1]);
+            otherPanel.Display(items[0]);
+            Debug.Log("Display swap");
+            return;
+        }
     }
     #endregion
     #region Private
@@ -101,25 +137,33 @@ public class InventoryPanelController : MonoBehaviour
 
     void ItemPanelUpdate(object sender, object args)
     {
-        ItemPanel guess = (ItemPanel)args;
+        GameObject guess = (GameObject)args;
         float closestDistance = 16;
-        ItemPanel target = guess;
+        GameObject target = guess;
         for (int i = 0; i < itemPositions.Length; i++)
         {
             Debug.Log(closestDistance);
             Debug.Log(Vector3.Distance(guess.transform.position, itemPositions[i]));
             if (Vector3.Distance(guess.transform.position, itemPositions[i]) < closestDistance)
             {
-                target = panel.items[i];
+                target = panel.items[i].gameObject;
                 closestDistance = Vector3.Distance(guess.transform.position, itemPositions[i]);
             }
         }
 
-        Debug.Log(target);
-        Debug.Log(guess);
+        for (int i = 0; i < equipPositions.Length; i++)
+        {
+            Debug.Log(closestDistance);
+            Debug.Log(Vector3.Distance(guess.transform.position, equipPositions[i]));
+            if (Vector3.Distance(guess.transform.position, equipPositions[i]) < closestDistance)
+            {
+                target = panel.equips[i].gameObject;
+                closestDistance = Vector3.Distance(guess.transform.position, equipPositions[i]);
+            }
+        }
         if (target == guess)
             return;
-        SwapItemPanels(guess, target);
+        SwapItemPanels(guess.gameObject, target);
     }
 
     void CheckLayout(object sender, object args)

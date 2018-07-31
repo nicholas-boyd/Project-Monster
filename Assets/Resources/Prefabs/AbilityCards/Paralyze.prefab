@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4102126482666210}
   - component: {fileID: 114978146712554826}
   - component: {fileID: 114219823652244910}
-  - component: {fileID: 114426114286941092}
-  - component: {fileID: 114661684922550322}
-  - component: {fileID: 114746713393178210}
-  - component: {fileID: 114532102414076410}
+  - component: {fileID: 114049388430699156}
+  - component: {fileID: 114231779132759532}
+  - component: {fileID: 114946203998613262}
+  - component: {fileID: 114116437598313062}
   m_Layer: 0
   m_Name: Paralyze
   m_TagString: Untagged
@@ -45,6 +45,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114049388430699156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204094672371248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114116437598313062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1204094672371248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2d4c933d9a2b143846799c08e5b4dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontal: 2
 --- !u!114 &114219823652244910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -57,30 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 100
---- !u!114 &114426114286941092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204094672371248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114532102414076410
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1204094672371248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a2d4c933d9a2b143846799c08e5b4dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 2
---- !u!114 &114661684922550322
+--- !u!114 &114231779132759532
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusName: StopStatusEffect
---- !u!114 &114746713393178210
+--- !u!114 &114946203998613262
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

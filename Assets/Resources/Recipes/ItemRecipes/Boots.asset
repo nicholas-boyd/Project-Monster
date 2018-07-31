@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Boots
   Sprite: {fileID: 21300000, guid: 82f9b1aac697c974897f4adbe7894a53, type: 3}
-  defaultSlots: 32
-  secondarySlots: 64
+  defaultSlots: 16
+  secondarySlots: 16
   features:
   - {fileID: 114583649121183236, guid: c28aff6db4d806e40b8d6e008bcf769a, type: 2}

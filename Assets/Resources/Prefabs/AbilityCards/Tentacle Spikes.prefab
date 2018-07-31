@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4357228113770280}
   - component: {fileID: 114255809527370926}
   - component: {fileID: 114672184486850274}
-  - component: {fileID: 114767783100934774}
-  - component: {fileID: 114890315898946472}
-  - component: {fileID: 114795270567903732}
-  - component: {fileID: 114596690635545924}
+  - component: {fileID: 114546989944784898}
+  - component: {fileID: 114704615687546104}
+  - component: {fileID: 114613877933019558}
+  - component: {fileID: 114539945958627164}
   m_Layer: 0
   m_Name: Tentacle Spikes
   m_TagString: Untagged
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 28998
---- !u!114 &114596690635545924
+--- !u!114 &114539945958627164
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -69,6 +69,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontal: 5
+--- !u!114 &114546989944784898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125808851708078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114613877933019558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125808851708078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1976babff28afc44bbe3ea3be7d4edbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114672184486850274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,29 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 40
---- !u!114 &114767783100934774
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125808851708078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc491afb4651804581e34bc121ad8dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114795270567903732
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125808851708078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1976babff28afc44bbe3ea3be7d4edbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114890315898946472
+--- !u!114 &114704615687546104
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

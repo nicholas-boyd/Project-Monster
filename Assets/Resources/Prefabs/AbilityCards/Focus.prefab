@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4205809192926542}
   - component: {fileID: 114059122173730332}
   - component: {fileID: 114369930655191382}
-  - component: {fileID: 114736676844747216}
-  - component: {fileID: 114028254876156668}
-  - component: {fileID: 114247829748124014}
-  - component: {fileID: 114200692184952494}
+  - component: {fileID: 114906296188736666}
+  - component: {fileID: 114450791971283230}
+  - component: {fileID: 114968584002697698}
+  - component: {fileID: 114737922704036224}
   m_Layer: 0
   m_Name: Focus
   m_TagString: Untagged
@@ -45,18 +45,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114028254876156668
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444218632613822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e769f8e1d3dcb1241a281641b0f515ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statusName: FocusStatusEffect
 --- !u!114 &114059122173730332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,29 +57,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 28870
---- !u!114 &114200692184952494
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444218632613822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48dd2e086176f3c42a1fadf86d3b1d78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 1
---- !u!114 &114247829748124014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1444218632613822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1976babff28afc44bbe3ea3be7d4edbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114369930655191382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,7 +69,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 100
---- !u!114 &114736676844747216
+--- !u!114 &114450791971283230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444218632613822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e769f8e1d3dcb1241a281641b0f515ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statusName: FocusStatusEffect
+--- !u!114 &114737922704036224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444218632613822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48dd2e086176f3c42a1fadf86d3b1d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontal: 1
+--- !u!114 &114906296188736666
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -113,5 +102,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ce649479f04d2846939a82b0ef60bf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114968584002697698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444218632613822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1976babff28afc44bbe3ea3be7d4edbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

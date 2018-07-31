@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Lower
   Sprite: {fileID: 21300000, guid: cebae4c663c554046878489d6475334c, type: 3}
-  defaultSlots: 16
+  defaultSlots: 8
   secondarySlots: 0
   features:
   - {fileID: 114583649121183236, guid: c28aff6db4d806e40b8d6e008bcf769a, type: 2}

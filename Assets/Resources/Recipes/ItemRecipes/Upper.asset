@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Upper
   Sprite: {fileID: 21300000, guid: 3439019588fe0a4429e71b4cbf2ed9a8, type: 3}
-  defaultSlots: 8
+  defaultSlots: 4
   secondarySlots: 0
   features:
   - {fileID: 114583649121183236, guid: c28aff6db4d806e40b8d6e008bcf769a, type: 2}

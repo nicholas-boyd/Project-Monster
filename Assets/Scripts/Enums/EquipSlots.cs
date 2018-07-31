@@ -4,11 +4,9 @@ using System.Collections;
 public enum EquipSlots
 {
     None = 0,
-    RightHand = 1 << 0,
-    LeftHand = 1 << 1,
-    Head = 1 << 2,
-    UpperBody = 1 << 3,
-    LowerBody = 1 << 4,
-    RightFoot = 1 << 5,
-    LeftFoot = 1 << 6
+    Hands = 1 << 0,
+    Head = 1 << 1,
+    UpperBody = 1 << 2,
+    LowerBody = 1 << 3,
+    Feet = 1 << 4
 }

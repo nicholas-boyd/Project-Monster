@@ -14,7 +14,7 @@ MonoBehaviour:
   Name: Bind
   Description: Slows down enemy to half their speed
   Sprite: {fileID: 21300000, guid: 52e52ad7eeac01f4daf1a08358d6d4f4, type: 3}
-  AbilityRangeIndicator: {fileID: 21300000, guid: dd3b98c983cca7f468858ce03dc74022,
+  AbilityRangeIndicator: {fileID: 21300000, guid: e183816fba5906642b7a0c70343ec1cb,
     type: 3}
   ParticleEffect: {fileID: 198728083853474614, guid: 568a3fc78e4413544b95192bd37709a9,
     type: 2}
